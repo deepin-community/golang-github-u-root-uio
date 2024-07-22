@@ -1,0 +1,20 @@
+
+--- golang-github-u-root-uio-0.0~git20220204.dac05f7.orig/uio/buffer.go
++++ golang-github-u-root-uio-0.0~git20220204.dac05f7/uio/buffer.go
+@@ -8,7 +8,6 @@ import (
+ 	"encoding/binary"
+ 	"fmt"
+ 
+-	"github.com/u-root/uio/ubinary"
+ )
+ 
+ // Marshaler is the interface implemented by an object that can marshal itself
+@@ -173,7 +172,7 @@ func NewBigEndianBuffer(b []byte) *Lexer
+ func NewNativeEndianBuffer(b []byte) *Lexer {
+ 	return &Lexer{
+ 		Buffer: NewBuffer(b),
+-		order:  ubinary.NativeEndian,
++		order:  binary.NativeEndian,
+ 	}
+ }
+ 
