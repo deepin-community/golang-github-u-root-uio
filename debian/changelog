@@ -1,3 +1,9 @@
+golang-github-u-root-uio (0.0~git20220204.dac05f7-2deepin1) unstable; urgency=medium
+
+  * Require Go 1.21, remove ubinary & josharian/native
+
+ -- LiChengGang <lichenggang@uniontech.com>  Mon, 22 Jul 2024 09:34:19 +0800
+
 golang-github-u-root-uio (0.0~git20220204.dac05f7-2) unstable; urgency=medium
 
   * Source only upload for testing migration
